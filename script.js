@@ -47,23 +47,50 @@ let friendFavorites = [
   ];
 
 // 5. Print out only foods that have an "a" in the name. For example, "Pizza" would not be included, but "Pasta" would be.
-
+for (let i = 0; i < friendFavorites.length; i++) {
+  if (friendFavorites[i].includes("a") || friendFavorites[i].includes("A")) {
+    console.log(friendFavorites[i]);
+  }
+};
 
 
 // 6. Store the result in an array called foodsWithA. Print out the array.
+let foodsWithA = [];
 
+for (let i = 0; i < friendFavorites.length; i++) {
+  if (friendFavorites[i].includes("a") || friendFavorites[i].includes("A")) {
+    foodsWithA.push(friendFavorites[i]);
+  }
+};
 
+console.log(foodsWithA);
 
 // 7. Create a new array longFoodNames for foods with names longer than 6 characters.
+longFoodNames = [];
 
+for (let i = 0; i < friendFavorites.length; i++) {
+  if (friendFavorites[i].length > 6) {
+    longFoodNames.push(friendFavorites[i]);
+  }
+};
 
 
 // 8. Create another array shortFoodNames for foods 6 characters or shorter.
+shortFoodNames = [];
 
+for (let i = 0; i < friendFavorites.length; i++) {
+  if (friendFavorites[i].length <= 6) {
+    shortFoodNames.push(friendFavorites[i]);
+  }
+};
 
 
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
+console.log(longFoodNames);
+console.log(shortFoodNames);
+
+console.log("There are more long-named foods.")
 
 
 // 10. STRETCH: Find the longest food name and print:
